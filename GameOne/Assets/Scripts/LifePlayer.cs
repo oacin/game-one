@@ -15,7 +15,7 @@ public class LifePlayer : MonoBehaviour
 
     public static bool isAlive = true;
 
-    public Scrollbar lifeBar;
+
 
     void Start()
     {
@@ -34,7 +34,6 @@ public class LifePlayer : MonoBehaviour
     public void takeDamage(int DamageSuffered){
         lifePlay -= DamageSuffered;
 
-        UpdateLifeBar();
 
 //Caso a vida chegue a 0 = Game Over
         if(lifePlay <= 0){
@@ -49,8 +48,5 @@ public class LifePlayer : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    private void UpdateLifeBar(){
-        lifeBar.size = lifePlay / lifeMax;
-    }
 
 }

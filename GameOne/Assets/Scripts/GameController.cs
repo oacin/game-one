@@ -19,7 +19,7 @@ public class GameController : MonoBehaviour
 
     public void UpdateScoreText(){
         scoreText.text = TotalScore.ToString();
-        scoreTextFinal.text = TotalScore.ToString();
+        //scoreTextFinal.text = TotalScore.ToString();
     }
 
 

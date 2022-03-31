@@ -25,7 +25,7 @@ public class CollectableItem : MonoBehaviour
             collected.SetActive(true);
 
             GameController.instance.TotalScore += Score;
-            NextLevel.instance.scoreInt += Score;
+            //NextLevel.instance.scoreInt += Score;
 
             GameController.instance.UpdateScoreText();
             

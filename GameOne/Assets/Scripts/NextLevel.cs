@@ -50,4 +50,8 @@ public class NextLevel : MonoBehaviour
 
         }
     }
+
+    public void nextLevel(string nextLevelName){
+        SceneManager.LoadScene(nextLevelName);
+    }
 }
