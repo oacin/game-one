@@ -8,7 +8,6 @@ public class CollectableItem : MonoBehaviour
     private SpriteRenderer sr;
     private CircleCollider2D circle;
 
-    public GameObject collected;
 
     public int Score;
     // Start is called before the first frame update
@@ -22,7 +21,6 @@ public class CollectableItem : MonoBehaviour
         if(collider.gameObject.tag == "Player"){
             sr.enabled = false;
             circle.enabled = false;
-            collected.SetActive(true);
 
             GameController.instance.TotalScore += Score;
             //NextLevel.instance.scoreInt += Score;
