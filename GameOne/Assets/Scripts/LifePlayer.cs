@@ -6,14 +6,18 @@ using UnityEngine.UI;
 public class LifePlayer : MonoBehaviour
 {
     //Setando a quantidade de vida que o player vai ter
-    public float lifeMax;
+    private int lifeMax = 3;
     
     //Quantidade de vida atual
-    public float lifePlay;
+    private int lifePlay;
 
     public GameObject gameOver;
 
     public static bool isAlive = true;
+
+    public GameObject life_1, life_2, life_3;
+
+    public Animator animator;
 
 
 
@@ -22,6 +26,7 @@ public class LifePlayer : MonoBehaviour
         //Ao iniciar colocando a vida do player como maxima
         lifePlay = lifeMax;
         isAlive = true;
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -34,10 +39,34 @@ public class LifePlayer : MonoBehaviour
     public void takeDamage(int DamageSuffered){
         lifePlay -= DamageSuffered;
 
+        if(lifePlay == 3){
+            life_1.SetActive(true);
+            life_2.SetActive(true);
+            life_3.SetActive(true);
+        }
+
+        else if(lifePlay == 2){
+            life_1.SetActive(true);
+            life_2.SetActive(true);
+            life_3.SetActive(false);
+        }
+
+        else if(lifePlay == 1){
+            life_1.SetActive(true);
+            life_2.SetActive(false);
+        }
+
 
 //Caso a vida chegue a 0 = Game Over
-        if(lifePlay <= 0){
+        else{
+            life_1.SetActive(false);
+            life_2.SetActive(false);
+            life_3.SetActive(false);
+
+            animator.SetBool("isDead", true);
+
             gameOver.SetActive(true);
+            
             Time.timeScale = 0;
             isAlive = false;
         }
