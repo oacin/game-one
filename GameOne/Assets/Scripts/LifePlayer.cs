@@ -19,6 +19,8 @@ public class LifePlayer : MonoBehaviour
 
     public Animator animator;
 
+    public AudioSource dead_sound;
+
 
 
     void Start()
@@ -66,7 +68,7 @@ public class LifePlayer : MonoBehaviour
             animator.SetBool("isDead", true);
 
             gameOver.SetActive(true);
-            
+            dead_sound.Play();
             Time.timeScale = 0;
             isAlive = false;
         }

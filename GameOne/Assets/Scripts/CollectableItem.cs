@@ -8,6 +8,8 @@ public class CollectableItem : MonoBehaviour
     private SpriteRenderer sr;
     private CircleCollider2D circle;
 
+    public AudioSource collect_sound;
+
 
     public int Score;
     // Start is called before the first frame update
@@ -22,12 +24,18 @@ public class CollectableItem : MonoBehaviour
             sr.enabled = false;
             circle.enabled = false;
 
-            GameController.instance.TotalScore += Score;
-            //NextLevel.instance.scoreInt += Score;
+            collect_sound.Play();
+            StartCoroutine(DestroyObjectAfter(3));
 
-            GameController.instance.UpdateScoreText();
-            
-            Destroy(gameObject, 0.3f);
+            GameController.instance.TotalScore += Score;
+
+            GameController.instance.UpdateScoreText();        
         }
+    }
+
+    IEnumerator DestroyObjectAfter(float time)
+    {
+        yield return new WaitForSeconds(time);
+        Destroy(gameObject, 0.3f);
     }
 }
