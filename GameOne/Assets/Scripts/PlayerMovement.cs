@@ -17,7 +17,9 @@ public class PlayerMovement : MonoBehaviour
     public Transform detectGround;
     public LayerMask isGround;
 
-    public Animator animator;
+    private Animator animator;
+
+    public AudioSource jumping_1;
 
     // Start is called before the first frame update
     void Start()
@@ -62,10 +64,13 @@ public class PlayerMovement : MonoBehaviour
 
         if(Input.GetButtonDown("Jump") && inGround)
         {
+            jumping_1.Play();
             rig.velocity = Vector2.up * 12;
-
+            
             animator.SetBool("isJumping", true);
         }
-    }
 
+        
+    }
+    
 }
