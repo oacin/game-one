@@ -19,8 +19,10 @@ public class LifePlayer : MonoBehaviour
 
     public Animator animator;
 
-    public AudioSource dead_sound;
+    public AudioSource dead_sound, damage_sound;
 
+
+    private Rigidbody2D rig;
 
 
     void Start()
@@ -29,6 +31,7 @@ public class LifePlayer : MonoBehaviour
         lifePlay = lifeMax;
         isAlive = true;
         animator = GetComponent<Animator>();
+        rig = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -40,6 +43,10 @@ public class LifePlayer : MonoBehaviour
 //Função para tomar dano(Quantidade de dano passada pela Trap)
     public void takeDamage(int DamageSuffered){
         lifePlay -= DamageSuffered;
+
+        damage_sound.Play();
+
+        rig.velocity = Vector2.up * 12;
 
         if(lifePlay == 3){
             life_1.SetActive(true);
