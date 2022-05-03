@@ -1,0 +1,4 @@
+Assets - https://www.gameart2d.com/freebies.html
+Utilizado como base para coletar itens - https://m.youtube.com/watch?v=cjMKi8nwv9c&t=5s
+Utilizado para chamar um script dentro de outro(Foi utilizado no script Trap que é utilizado para causar danos) - https://docs.unity3d.com/ScriptReference/GameObject.GetComponent.html
+Utilizado como base para fazer as plataformas cairem(Script falling) - https://m.youtube.com/watch?v=DqFy5SkKWBI&t=1064s
