@@ -1144,7 +1144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collect_sound: {fileID: 735177958}
-  Score: 10
+  Score: 1
 --- !u!114 &129439650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1814,7 +1814,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collect_sound: {fileID: 735177958}
-  Score: 10
+  Score: 1
 --- !u!114 &209056979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11055,7 +11055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collect_sound: {fileID: 735177958}
-  Score: 10
+  Score: 1
 --- !u!114 &1344235015
 MonoBehaviour:
   m_ObjectHideFlags: 0
