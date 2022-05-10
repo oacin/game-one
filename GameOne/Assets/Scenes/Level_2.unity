@@ -42154,6 +42154,7 @@ MonoBehaviour:
   TotalScore: 0
   scoreText: {fileID: 1023022796}
   scoreTextFinal: {fileID: 1023022796}
+  amountStars: 3
 --- !u!4 &1798658534
 Transform:
   m_ObjectHideFlags: 0

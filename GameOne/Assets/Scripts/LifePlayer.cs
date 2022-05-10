@@ -24,6 +24,8 @@ public class LifePlayer : MonoBehaviour
 
     private Rigidbody2D rig;
 
+    public Vector2 respawnPoint;
+
 
     void Start()
     {
@@ -47,6 +49,7 @@ public class LifePlayer : MonoBehaviour
         damage_sound.Play();
 
         rig.velocity = Vector2.up * 12;
+        rig.transform.position = respawnPoint;
 
         if(lifePlay == 3){
             life_1.SetActive(true);
@@ -87,4 +90,7 @@ public class LifePlayer : MonoBehaviour
     }
 
 
+    public void respawnPosition(Vector2 positionSpawn){
+        respawnPoint = positionSpawn;
+    }
 }
