@@ -48,9 +48,6 @@ public class LifePlayer : MonoBehaviour
 
         damage_sound.Play();
 
-        rig.velocity = Vector2.up * 12;
-        rig.transform.position = respawnPoint;
-
         if(lifePlay == 3){
             life_1.SetActive(true);
             life_2.SetActive(true);
@@ -61,11 +58,18 @@ public class LifePlayer : MonoBehaviour
             life_1.SetActive(true);
             life_2.SetActive(true);
             life_3.SetActive(false);
+            Invoke("restartPosition", 1);
+            animator.SetBool("isDead", true);
+            rig.constraints = RigidbodyConstraints2D.FreezeAll;
+
         }
 
         else if(lifePlay == 1){
             life_1.SetActive(true);
             life_2.SetActive(false);
+            Invoke("restartPosition", 1);
+            animator.SetBool("isDead", true);
+            rig.constraints = RigidbodyConstraints2D.FreezeAll;
         }
 
 
@@ -92,5 +96,13 @@ public class LifePlayer : MonoBehaviour
 
     public void respawnPosition(Vector2 positionSpawn){
         respawnPoint = positionSpawn;
+    }
+
+    void restartPosition(){
+        rig.transform.position = respawnPoint;
+        animator.SetBool("isDead", false);
+        rig.constraints = RigidbodyConstraints2D.None;
+        rig.constraints = RigidbodyConstraints2D.FreezeRotation;
+        
     }
 }
