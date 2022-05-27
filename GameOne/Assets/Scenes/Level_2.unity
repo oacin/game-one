@@ -1551,7 +1551,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2743e6e0580a1924f809b49af0786638, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DamageSuffered: 10
+  DamageSuffered: 1
 --- !u!95 &263999049
 Animator:
   serializedVersion: 3
@@ -1881,7 +1881,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2743e6e0580a1924f809b49af0786638, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DamageSuffered: 10
+  DamageSuffered: 1
 --- !u!95 &274406582
 Animator:
   serializedVersion: 3
@@ -2179,7 +2179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2743e6e0580a1924f809b49af0786638, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DamageSuffered: 1000
+  DamageSuffered: 1
 --- !u!19719996 &361447836
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -32523,7 +32523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2743e6e0580a1924f809b49af0786638, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DamageSuffered: 10
+  DamageSuffered: 1
 --- !u!95 &387079821
 Animator:
   serializedVersion: 3
@@ -33965,7 +33965,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2743e6e0580a1924f809b49af0786638, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DamageSuffered: 10
+  DamageSuffered: 1
 --- !u!95 &676129077
 Animator:
   serializedVersion: 3
@@ -36811,7 +36811,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2743e6e0580a1924f809b49af0786638, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DamageSuffered: 10
+  DamageSuffered: 1
 --- !u!95 &1395085873
 Animator:
   serializedVersion: 3
@@ -37366,7 +37366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2743e6e0580a1924f809b49af0786638, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DamageSuffered: 10
+  DamageSuffered: 1
 --- !u!95 &1503251873
 Animator:
   serializedVersion: 3

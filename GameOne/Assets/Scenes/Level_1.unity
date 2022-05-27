@@ -1356,7 +1356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2743e6e0580a1924f809b49af0786638, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DamageSuffered: 10
+  DamageSuffered: 1
 --- !u!61 &154931680
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11583,7 +11583,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2743e6e0580a1924f809b49af0786638, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DamageSuffered: 1000
+  DamageSuffered: 1
 --- !u!19719996 &1387874635
 TilemapCollider2D:
   m_ObjectHideFlags: 0
