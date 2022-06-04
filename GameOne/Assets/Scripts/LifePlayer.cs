@@ -26,6 +26,8 @@ public class LifePlayer : MonoBehaviour
 
     public Vector2 respawnPoint;
 
+    public GameObject[] teste;
+
 
     void Start()
     {
@@ -34,6 +36,8 @@ public class LifePlayer : MonoBehaviour
         isAlive = true;
         animator = GetComponent<Animator>();
         rig = GetComponent<Rigidbody2D>();
+
+        teste = GameObject.FindGameObjectsWithTag("Falling");
     }
 
     // Update is called once per frame
@@ -45,6 +49,8 @@ public class LifePlayer : MonoBehaviour
 //Função para tomar dano(Quantidade de dano passada pela Trap)
     public void takeDamage(int DamageSuffered){
         lifePlay -= DamageSuffered;
+
+        FindObjectOfType<falling>().GetComponent<falling>().restartPositionFalling();
 
         damage_sound.Play();
 
@@ -99,10 +105,16 @@ public class LifePlayer : MonoBehaviour
     }
 
     void restartPosition(){
+
         rig.transform.position = respawnPoint;
         animator.SetBool("isDead", false);
         rig.constraints = RigidbodyConstraints2D.None;
         rig.constraints = RigidbodyConstraints2D.FreezeRotation;
-        
+
+
+
+        foreach(GameObject falling in teste) {
+            falling.GetComponent<falling>().restartPositionFalling();
+        }
     }
 }

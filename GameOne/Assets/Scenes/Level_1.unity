@@ -354,7 +354,7 @@ GameObject:
   - component: {fileID: 10879298}
   m_Layer: 6
   m_Name: Platform_Falling
-  m_TagString: Untagged
+  m_TagString: Falling
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8976,7 +8976,7 @@ GameObject:
   - component: {fileID: 812066207}
   m_Layer: 6
   m_Name: Platform_Falling (5)
-  m_TagString: Untagged
+  m_TagString: Falling
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9368,7 +9368,7 @@ GameObject:
   - component: {fileID: 873987469}
   m_Layer: 6
   m_Name: Platform_Falling (2)
-  m_TagString: Untagged
+  m_TagString: Falling
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43332,7 +43332,7 @@ GameObject:
   - component: {fileID: 2014162099}
   m_Layer: 6
   m_Name: Platform_Falling (6)
-  m_TagString: Untagged
+  m_TagString: Falling
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43822,6 +43822,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 825047722364088064, guid: 5decec3ad4bdfef4497a5e08f7203cba, type: 3}
+      propertyPath: teste
+      value: 
+      objectReference: {fileID: 2014162097}
     - target: {fileID: 825047722364088064, guid: 5decec3ad4bdfef4497a5e08f7203cba, type: 3}
       propertyPath: life_1
       value: 
