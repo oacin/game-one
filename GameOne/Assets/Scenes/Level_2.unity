@@ -324,7 +324,7 @@ GameObject:
   - component: {fileID: 42901904}
   m_Layer: 0
   m_Name: Mushroom (1)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -382,6 +382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DamageSuffered: 1
+  Vulnerability: 0
 --- !u!61 &42901906
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1494,7 +1495,7 @@ GameObject:
   - component: {fileID: 263999047}
   m_Layer: 0
   m_Name: Water (3)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1552,6 +1553,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DamageSuffered: 1
+  Vulnerability: 0
 --- !u!95 &263999049
 Animator:
   serializedVersion: 3
@@ -1824,7 +1826,7 @@ GameObject:
   - component: {fileID: 274406580}
   m_Layer: 0
   m_Name: Water (2)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1882,6 +1884,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DamageSuffered: 1
+  Vulnerability: 0
 --- !u!95 &274406582
 Animator:
   serializedVersion: 3
@@ -1968,7 +1971,7 @@ GameObject:
   - component: {fileID: 312686322}
   m_Layer: 0
   m_Name: Mushroom (2)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2026,6 +2029,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DamageSuffered: 1
+  Vulnerability: 0
 --- !u!61 &312686324
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2118,7 +2122,7 @@ GameObject:
   - component: {fileID: 361447835}
   m_Layer: 0
   m_Name: EndMap
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2150,6 +2154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DamageSuffered: 1
+  Vulnerability: 0
 --- !u!19719996 &361447836
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -32730,7 +32735,7 @@ GameObject:
   - component: {fileID: 387079819}
   m_Layer: 0
   m_Name: Water (4)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32788,6 +32793,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DamageSuffered: 1
+  Vulnerability: 0
 --- !u!95 &387079821
 Animator:
   serializedVersion: 3
@@ -33362,7 +33368,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 515810656}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.381775, y: -2.21, z: -20}
+  m_LocalPosition: {x: -5.3821335, y: -2.21, z: -20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 842075933}
@@ -33525,7 +33531,7 @@ GameObject:
   - component: {fileID: 535902403}
   m_Layer: 0
   m_Name: Mushroom
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33583,6 +33589,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DamageSuffered: 1
+  Vulnerability: 0
 --- !u!61 &535902405
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34183,7 +34190,7 @@ GameObject:
   - component: {fileID: 676129075}
   m_Layer: 0
   m_Name: Water (1)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34241,6 +34248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DamageSuffered: 1
+  Vulnerability: 0
 --- !u!95 &676129077
 Animator:
   serializedVersion: 3
@@ -34774,7 +34782,7 @@ GameObject:
   - component: {fileID: 784360519}
   m_Layer: 0
   m_Name: Mushroom (4)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34832,6 +34840,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DamageSuffered: 1
+  Vulnerability: 0
 --- !u!61 &784360521
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35157,7 +35166,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7784431, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -35370,7 +35379,7 @@ GameObject:
   - component: {fileID: 853176060}
   m_Layer: 0
   m_Name: Rino_Run (2)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35429,6 +35438,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DamageSuffered: 1
+  Vulnerability: 0
 --- !u!61 &853176062
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36975,7 +36985,7 @@ GameObject:
   - component: {fileID: 1395085871}
   m_Layer: 0
   m_Name: Water (5)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37033,6 +37043,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DamageSuffered: 1
+  Vulnerability: 0
 --- !u!95 &1395085873
 Animator:
   serializedVersion: 3
@@ -37187,7 +37198,7 @@ GameObject:
   - component: {fileID: 1428107626}
   m_Layer: 0
   m_Name: Rino_Run
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37246,6 +37257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DamageSuffered: 1
+  Vulnerability: 0
 --- !u!61 &1428107628
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37530,7 +37542,7 @@ GameObject:
   - component: {fileID: 1503251871}
   m_Layer: 0
   m_Name: Water
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37588,6 +37600,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DamageSuffered: 1
+  Vulnerability: 0
 --- !u!95 &1503251873
 Animator:
   serializedVersion: 3
@@ -43516,7 +43529,7 @@ GameObject:
   - component: {fileID: 1852567419}
   m_Layer: 0
   m_Name: Rino_Run (4)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43575,6 +43588,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DamageSuffered: 1
+  Vulnerability: 0
 --- !u!61 &1852567421
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43992,7 +44006,7 @@ GameObject:
   - component: {fileID: 1901877109}
   m_Layer: 0
   m_Name: Mushroom (3)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44050,6 +44064,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DamageSuffered: 1
+  Vulnerability: 0
 --- !u!61 &1901877111
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -28,6 +28,8 @@ public class LifePlayer : MonoBehaviour
 
     public GameObject[] teste;
 
+    public GameObject[] trapObject;
+
 
     void Start()
     {
@@ -38,6 +40,8 @@ public class LifePlayer : MonoBehaviour
         rig = GetComponent<Rigidbody2D>();
 
         teste = GameObject.FindGameObjectsWithTag("Falling");
+
+        trapObject = GameObject.FindGameObjectsWithTag("Trap");
     }
 
     // Update is called once per frame
@@ -112,9 +116,24 @@ public class LifePlayer : MonoBehaviour
         rig.constraints = RigidbodyConstraints2D.FreezeRotation;
 
 
-
         foreach(GameObject falling in teste) {
             falling.GetComponent<falling>().restartPositionFalling();
+        }
+
+        vulnerabilityOff();
+
+        Invoke("vulnerabilityOn", 3);
+    }
+
+    void vulnerabilityOff(){
+        foreach(GameObject trap in trapObject) {
+            trap.GetComponent<Trap>().vulnerabilityIs(false);
+        }
+    }
+
+    void vulnerabilityOn(){
+        foreach(GameObject trap in trapObject) {
+            trap.GetComponent<Trap>().vulnerabilityIs(true);
         }
     }
 }
